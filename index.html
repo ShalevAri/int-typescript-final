@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Delivery Manager</title>
+		<link rel="stylesheet" href="./dist/app.css" />
+		<link rel="stylesheet" href="./dist/styles.css" />
+	</head>
+	<body>
+		<h1 class="page-title">Delivery Manager</h1>
+
+		<h2 class="secondary-title">Log your delivery</h2>
+		<form>
+			<input
+				class="person-name"
+				type="text"
+				name="PersonName"
+				id="PersonName"
+				placeholder="Enter the recipient's name"
+			/>
+
+			<select name="location" id="location">
+				<option value="london">London</option>
+				<option value="new-york">New York</option>
+				<option value="los-angeles">Los Angeles</option>
+			</select>
+
+			<select name="time" id="time">
+				<option value="morning">morning</option>
+				<option value="after-noon">after noon</option>
+				<option value="evening">evening</option>
+			</select>
+		</form>
+	</body>
+</html>
