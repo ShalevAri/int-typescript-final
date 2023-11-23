@@ -1,4 +1,5 @@
-import {View} from "./buttons.view"
+import {View} from "./buttons.view.ts"
+import {DeliveryData, deliveryDatabase} from "./db.ts"
 
 class Controller {
 	private view: View
@@ -9,15 +10,25 @@ class Controller {
 	}
 
 	private bindEvents(): void {
-		this.view.bindConfirmButton(() => {
-			alert("Your data has been submitted")
-		})
+		this.view.bindConfirmButton(() => this.handleConfirmButtonClick())
+		this.view.bindCancelButton(() => this.handleCancelButtonClick())
+	}
 
-		this.view.bindCancelButton(() => {
-			alert("Your data has been cancelled")
-		})
+	private handleConfirmButtonClick(): void {
+		const formData: DeliveryData = {
+			recipientName: this.view.getRecipientName(),
+			place: this.view.getLocation(),
+			time: this.view.getTime(),
+		}
+
+		deliveryDatabase.push(formData)
+
+		console.log("Delivery Database:", deliveryDatabase)
+	}
+
+	private handleCancelButtonClick(): void {
+		this.view.resetForm()
 	}
 }
 
-const view = new View()
-const controller = new Controller(view)
+export default Controller

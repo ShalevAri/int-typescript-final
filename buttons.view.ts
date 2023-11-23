@@ -33,24 +33,21 @@ export class View {
 		})
 	}
 
-	bindRecipientName(callback: () => void): void {
-		this.recipientName.addEventListener("click", (e) => {
-			e.preventDefault()
-			callback()
-		})
+	getRecipientName(): string {
+		return this.recipientName.value
 	}
 
-	bindLocation(callback: () => void): void {
-		this.location.addEventListener("select", (e) => {
-			e.preventDefault()
-			callback()
-		})
+	getLocation(): string {
+		return this.location.value
 	}
 
-	bindTime(callback: () => void): void {
-		this.time.addEventListener("select", (e) => {
-			e.preventDefault()
-			callback()
-		})
+	getTime(): string {
+		return this.time.value
+	}
+
+	resetForm(): void {
+		this.recipientName.value = ""
+		this.location.value = "london"
+		this.time.value = "morning"
 	}
 }

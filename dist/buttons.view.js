@@ -21,23 +21,19 @@ var View = /** @class */ (function () {
             callback();
         });
     };
-    View.prototype.bindRecipientName = function (callback) {
-        this.recipientName.addEventListener("click", function (e) {
-            e.preventDefault();
-            callback();
-        });
+    View.prototype.getRecipientName = function () {
+        return this.recipientName.value;
     };
-    View.prototype.bindLocation = function (callback) {
-        this.location.addEventListener("select", function (e) {
-            e.preventDefault();
-            callback();
-        });
+    View.prototype.getLocation = function () {
+        return this.location.value;
     };
-    View.prototype.bindTime = function (callback) {
-        this.time.addEventListener("select", function (e) {
-            e.preventDefault();
-            callback();
-        });
+    View.prototype.getTime = function () {
+        return this.time.value;
+    };
+    View.prototype.resetForm = function () {
+        this.recipientName.value = "";
+        this.location.value = "london";
+        this.time.value = "morning";
     };
     return View;
 }());

@@ -1,20 +1,28 @@
 "use strict";
 exports.__esModule = true;
-var buttons_view_1 = require("./buttons.view");
+var db_ts_1 = require("./db.ts");
 var Controller = /** @class */ (function () {
     function Controller(view) {
         this.view = view;
         this.bindEvents();
     }
     Controller.prototype.bindEvents = function () {
-        this.view.bindConfirmButton(function () {
-            alert("Your data has been submitted");
-        });
-        this.view.bindCancelButton(function () {
-            alert("Your data has been cancelled");
-        });
+        var _this = this;
+        this.view.bindConfirmButton(function () { return _this.handleConfirmButtonClick(); });
+        this.view.bindCancelButton(function () { return _this.handleCancelButtonClick(); });
+    };
+    Controller.prototype.handleConfirmButtonClick = function () {
+        var formData = {
+            recipientName: this.view.getRecipientName(),
+            place: this.view.getLocation(),
+            time: this.view.getTime()
+        };
+        db_ts_1.deliveryDatabase.push(formData);
+        console.log("Delivery Database:", db_ts_1.deliveryDatabase);
+    };
+    Controller.prototype.handleCancelButtonClick = function () {
+        this.view.resetForm();
     };
     return Controller;
 }());
-var view = new buttons_view_1.View();
-var controller = new Controller(view);
+exports["default"] = Controller;
