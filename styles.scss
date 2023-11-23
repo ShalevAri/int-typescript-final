@@ -6,3 +6,22 @@
 	font-size: 2em;
 	font-family: "Poppins", sans-serif;
 }
+
+.secondary-title {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 20rem;
+	font-weight: 700;
+	font-size: 2em;
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30rem;
+}
+
