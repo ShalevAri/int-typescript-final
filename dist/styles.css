@@ -37,3 +37,23 @@
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
+
+.buttons-container {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10rem;
+}
+
+.button {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 10px;
+  background: white;
+}
