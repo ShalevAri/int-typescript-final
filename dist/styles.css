@@ -58,6 +58,11 @@
   border: none;
   border-radius: 10px;
   background: white;
+  transition: all 500ms;
+}
+
+.button:hover {
+  transform: scale(1.1);
 }
 
 .location {
@@ -66,8 +71,14 @@
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+  text-align: center;
   background: white;
+  transition: all 500ms;
+}
+
+.location:hover {
+  transform: scale(1.1);
 }
 
 .time {
@@ -76,6 +87,12 @@
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+  text-align: center;
   background: white;
+  transition: all 500ms;
+}
+
+.time:hover {
+  transform: scale(1.1);
 }
