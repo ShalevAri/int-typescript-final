@@ -24,3 +24,16 @@
   height: 100vh;
   gap: 30rem;
 }
+
+.person-name {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  font-size: 2em;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
