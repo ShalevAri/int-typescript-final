@@ -96,3 +96,21 @@
 .time:hover {
   transform: scale(1.1);
 }
+
+.total-delivery-amount-title {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.state-container {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-family: "Courier New", Courier, monospace;
+}
