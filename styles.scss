@@ -1,98 +1,98 @@
 .page-title {
-	display: flex;
-	justify-content: center;
-	margin-top: 10px;
-	font-weight: 700;
-	font-size: 2em;
-	font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
 }
 
 .secondary-title {
-	display: flex;
-	justify-content: center;
-	position: relative;
-	top: 10rem;
-	font-weight: 700;
-	font-size: 2em;
-	font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10rem;
+  font-weight: 700;
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	gap: 30rem;
-	position: relative;
-	bottom: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30rem;
+  position: relative;
+  bottom: 20rem;
 }
 
 .person-name {
-	background: white;
-	color: black;
-	border-radius: 10px;
-	border: none;
-	font-size: 2em;
-	padding: 2rem;
-	padding-left: 3rem;
-	padding-right: 3rem;
-	font-weight: 700;
-	font-family: "Poppins", sans-serif;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  font-size: 2em;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
 }
 
 .buttons-container {
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	display: flex;
-	gap: 10rem;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10rem;
 }
 
 .button {
-	width: 200px;
-	height: 30px;
-	text-align: center;
-	font-weight: 700;
-	font-family: "Poppins", sans-serif;
-	border: none;
-	border-radius: 10px;
-	background: white;
-	transition: all 500ms;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  transition: all 500ms;
 }
 
 .button:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .location {
-	width: 200px;
-	height: 30px;
-	font-weight: 700;
-	font-family: "Poppins", sans-serif;
-	border: none;
-	border-radius: 5px;
-	text-align: center;
-	background: white;
-	transition: all 500ms;
+  width: 200px;
+  height: 30px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background: white;
+  transition: all 500ms;
 }
 
 .location:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .time {
-	width: 200px;
-	height: 30px;
-	font-weight: 700;
-	font-family: "Poppins", sans-serif;
-	border: none;
-	border-radius: 5px;
-	text-align: center;
-	background: white;
-	transition: all 500ms;
+  width: 200px;
+  height: 30px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background: white;
+  transition: all 500ms;
 }
 
 .time:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }

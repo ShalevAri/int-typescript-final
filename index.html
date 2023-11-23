@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Delivery Manager</title>
-		<link rel="stylesheet" href="./dist/app.css" />
-		<link rel="stylesheet" href="./dist/styles.css" />
-	</head>
-	<body>
-		<h1 class="page-title">Delivery Manager</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery Manager</title>
+    <link rel="stylesheet" href="./dist/app.css" />
+    <link rel="stylesheet" href="./dist/styles.css" />
+  </head>
+  <body>
+    <h1 class="page-title">Delivery Manager</h1>
 
-		<h2 class="secondary-title">Log your deliveries</h2>
-		<form>
-			<div class="container">
-				<input
-					class="person-name"
-					type="text"
-					name="PersonName"
-					id="PersonName"
-					placeholder="Enter recipient's name"
-				/>
+    <h2 class="secondary-title">Log your deliveries</h2>
+    <form>
+      <div class="container">
+        <input
+          class="person-name"
+          type="text"
+          name="PersonName"
+          id="PersonName"
+          placeholder="Enter recipient's name"
+        />
 
-				<select class="location" name="location" id="location">
-					<option selected value="london">London</option>
-					<option value="new-york">New York</option>
-					<option value="los-angeles">Los Angeles</option>
-				</select>
+        <select class="location" name="location" id="location">
+          <option selected value="london">London</option>
+          <option value="new-york">New York</option>
+          <option value="los-angeles">Los Angeles</option>
+        </select>
 
-				<select class="time" name="time" id="time">
-					<option selected value="morning">morning</option>
-					<option value="after-noon">after noon</option>
-					<option value="evening">evening</option>
-				</select>
-			</div>
+        <select class="time" name="time" id="time">
+          <option selected value="morning">morning</option>
+          <option value="after-noon">after noon</option>
+          <option value="evening">evening</option>
+        </select>
+      </div>
 
-			<div class="buttons-container">
-				<button class="button confirm-button">Confirm</button>
-				<button class="button cancel-button">Cancel</button>
-			</div>
-		</form>
+      <div class="buttons-container">
+        <button class="button confirm-button">Confirm</button>
+        <button class="button cancel-button">Cancel</button>
+      </div>
+    </form>
 
-		<script defer src="./dist/db.js"></script>
-		<script defer src="./dist/buttons.view.js"></script>
-		<script defer src="./dist/buttons.controller.js"></script>
-	</body>
+    <script defer src="./dist/db.js"></script>
+    <script defer src="./dist/buttons.view.js"></script>
+    <script defer src="./dist/buttons.controller.js"></script>
+  </body>
 </html>
